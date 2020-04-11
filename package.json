@@ -1,0 +1,14 @@
+{
+  "name": "express-flashcards",
+  "version": "1.0.0",
+  "description": "This is a testing project for learning Express.JS framework.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Konstantin Kuts",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.15.2"
+  }
+}
