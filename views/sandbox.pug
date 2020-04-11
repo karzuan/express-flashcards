@@ -1,0 +1,14 @@
+extends layout.pug
+
+block content
+      h1 Hello there, #{username}
+      section#content
+        h2 Here's list of your friends:
+        table
+          tr
+            th First Name
+            th Last Name
+            each friend in friends
+              tr
+                th= friend[0]
+                th= friend[1]
