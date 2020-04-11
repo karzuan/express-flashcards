@@ -26,8 +26,8 @@ app.get('/', (req, res) => {
     res.render('index');
 } );
 app.get('/cards', (req, res) => {
-    //res.locals.prompt = "Who1 us buries in Grant's tomb?";
-    res.render('card', {prompt: "Who1 us buries in Grant's tomb?", hint: "Think about whose tomb it is."});
+    //res.locals.prompt = "Who is buried in Grant's tomb?";
+    res.render('card', {prompt: "Who is buried in Grant's tomb?", hint: "Think about whose tomb it is."});
 } );
 app.get('/sandbox', (req, res) => {
     //res.locals.prompt = "Who1 us buries in Grant's tomb?";
