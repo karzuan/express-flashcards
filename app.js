@@ -1,10 +1,12 @@
-// start the app: nodemon
+// to start the app: node app.js || nodemon
 const express = require('express');
 const bodyParses = require('body-parser');
+const cookieParser = require('cookie-parser');
 
 
 const app = express();
 app.use(bodyParses.urlencoded({ extended: false}));
+app.use(cookieParser());
 
 const colors = [
     'red',
@@ -38,9 +40,10 @@ app.get('/sandbox', (req, res) => {
     res.render('sandbox', {username, friends});
 } );
 app.get('/hello', (req, res) => {
-    res.render('hello');
+    res.render('hello', {name: req.cookies.username});
 } );
 app.post('/hello', (req, res) => {
+    res.cookie('username', req.body.username );
     //console.dir(req.body);
     //res.json(req.body);
     res.render('hello', {name: req.body.username });
