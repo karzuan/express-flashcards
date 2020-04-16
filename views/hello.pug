@@ -1,9 +1,6 @@
 extends layout.pug
 
 block content
-    if( name ) 
-        p Hello #{name}!
-    else    
         form(action='/hello', method='post')
             label Enter your name
                 input(type = 'text', name='username')
