@@ -28,6 +28,13 @@ const colors = [
 app.set('view engine', 'pug');
 //app.set('views', __dirname + '/templates') example of changing default views directory
 
+// app.use((req, res, next ) => {
+//     console.log('Hello');
+//     const err = new Error('Oh noes!');
+//     err.status = 500;
+//     next(err);
+// });
+
 app.get('/', (req, res) => {
     const name = req.cookies.username;
     if (name){
@@ -64,6 +71,18 @@ app.post('/hello', (req, res) => {
     //res.render('hello', {name: req.body.username });
     res.redirect('/');
 } );
+
+app.use((req, res, next )=>{
+    const err = new Error('Not Found');
+    err.status = 404;
+    next(err);
+});
+
+app.use((err, req, res, next)=>{
+    res.locals.error = err;
+    res.status(err.status);
+    res.render('error', err);
+});
 
 app.listen(3000, () => {
     console.log('The application is runnung on a localgost:3000')
