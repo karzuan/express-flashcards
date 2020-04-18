@@ -26,56 +26,6 @@
                 "question": "Which HTML element can contain JavaScript?",
                 "hint": "It starts with an \"s\"",
                 "answer": "<script>"
-            },
-            {
-                "question": "What is bravado?",
-                "hint": "brave",
-                "answer": "a swaggering show of courage"
-            },
-            {
-                "question": "What is cacophony?",
-                "hint": "noisy",
-                "answer": "loud confusing disagreeable sounds"
-            },
-            {
-                "question": "What is capricious?",
-                "hint": "idk",
-                "answer": "determined by chance or impulse rather than by necessity"
-            },
-            {
-                "question": "What is carte blanche?",
-                "hint": "idk",
-                "answer": "complete freedom or authority to act"
-            },
-            {
-                "question": "What is deja vu?",
-                "hint": "french",
-                "answer": "the experience of thinking a new situation already occurred"
-            },
-            {
-                "question": "What is zealous?",
-                "hint": "idk",
-                "answer": "marked by active interest and enthusiasm"
-            },
-            {
-                "question": "What is white elephant?",
-                "hint": "idk",
-                "answer": "a valuable possession whose upkeep is excessively expensive"
-            },
-            {
-                "question": "What is waft?",
-                "hint": "flag",
-                "answer": "a long flag; often tapering"
-            },
-            {
-                "question": "What is vile?",
-                "hint": "idk",
-                "answer": "morally reprehensible"
-            },
-            {
-                "question": "What is vicarious?",
-                "hint": "idk",
-                "answer": "experienced at secondhand"
             }
         ]
     }

@@ -1,17 +1,18 @@
 {
-  "name": "express-flashcards",
+  "name": "flashcards",
   "version": "1.0.0",
-  "description": "This is a testing project for learning Express.JS framework.",
+  "description": "",
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Konstantin Kuts",
+  "keywords": [],
+  "author": "",
   "license": "ISC",
   "dependencies": {
-    "body-parser": "^1.19.0",
-    "cookie-parser": "^1.4.5",
+    "body-parser": "^1.17.1",
+    "cookie-parser": "^1.4.3",
     "express": "^4.15.2",
-    "pug": "^2.0.4"
+    "pug": "^2.0.0-rc.1"
   }
 }
